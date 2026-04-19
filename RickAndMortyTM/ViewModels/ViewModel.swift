@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import Combine
 
 @MainActor
-class BrowseViewModel: ObservableObject {
+class ViewModel: ObservableObject {
 
     @Published var selectedResource: RMResource = .characters
     @Published var searchText: String = ""
